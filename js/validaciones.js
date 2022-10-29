@@ -26,17 +26,33 @@ const mensajeError = {
     },
     email: {
         valueMissing: "Este campo no puede estar vacio",
-        typeMismatch: "El correo no es valido"
+        typeMismatch: "El correo no es valido",
     },
     password: {
         valueMissing: "Este campo no puede estar vacio",
-        patternMismatch: "Al menos 5 caracteres maximo 12, debe contener una letra mayuscula una minuscula y un numero"
+        patternMismatch: "Al menos 5 caracteres maximo 12, debe contener una letra mayuscula una minuscula y un numero",
     },
     nacimiento: {
         valueMissing: "Este campo no puede estar vacio",
         customError: "Debes ser mayor de edad",
-    }
-}
+    },
+    numero: {
+        valueMissing: "Este campo no puede estar vacio",
+        patternMismatch: "El formato requerido es xxxxxxxxxx 10 numeros",
+    },
+    direccion: {
+        valueMissing: "Este campo no puede estar vacio",
+        patternMismatch: "El formato debe tener entre 10 y 40 caracteres",
+    },
+    ciudad: {
+        valueMissing: "Este campo no puede estar vacio",
+        patternMismatch: "El formato debe tener entre 10 y 40 caracteres",
+    },
+    estado: {
+        valueMissing: "Este campo no puede estar vacio",
+        patternMismatch: "El formato debe tener entre 10 y 40 caracteres",
+    },
+};
 
 const validadores = {
     nacimiento: (input) => validarNacimiento(input),
