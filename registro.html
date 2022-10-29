@@ -26,19 +26,22 @@
                 <fieldset>
                     <legend class="form__label">Información básica</legend>
                     <div class="input-container">
-                        <input name="name" id="name" class="input" type="text" placeholder="Nombre" required>
+                        <input name="name" id="name" class="input" type="text" placeholder="Nombre" required
+                            data-tipo="nombre">
                         <label class="input-label" for="name">Nombre</label>
                         <span class="input-message-error">Este campo no es valido</span>
                     </div>
                     <div class="input-container">
-                        <input name="email" id="email" class="input" type="email" placeholder="Email" required>
+                        <input name="email" id="email" class="input" type="email" placeholder="Email" required
+                            data-tipo="email">
                         <label class="input-label" for="email">Email</label>
                         <span class="input-message-error">Este campo no es valido</span>
                     </div>
                     <div class="input-container">
                         <input name="password" id="password" class="input" type="password" placeholder="Contraseña"
                             minlength="5" maxlength="12" required pattern="[A-Za-z0-9]+"
-                            title="Al menos 5 caracteres maximo 12, debe contener una letra mayuscula una minuscula y un numero">
+                            title="Al menos 5 caracteres maximo 12, debe contener una letra mayuscula una minuscula y un numero"
+                            data-tipo="password">
                         <label class="input-label" for="password">Contraseña</label>
                         <span class="input-message-error">Este campo no es valido</span>
                     </div>
@@ -80,7 +83,7 @@
             </form>
         </section>
     </main>
-    <script src="js/validaciones.js"></script>
+    <script type="module" src="js/app.js"></script>
 </body>
 
 </html>
